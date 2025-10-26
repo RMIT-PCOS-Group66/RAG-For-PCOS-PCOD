@@ -1,6 +1,13 @@
 # PCOS Nutrition Assistant (RAG System)
 *A Retrieval-Augmented Generation prototype that provides evidence-based nutrition and lifestyle guidance for PCOS/PCOD.*
 
+## Introduction
+
+Polycystic Ovary Syndrome (PCOS) and Polycystic Ovarian Disease (PCOD) are common hormonal disorders affecting women of reproductive age. Managing these conditions often requires continuous guidance on diet, physical activity, and lifestyle adjustments. However, reliable, evidence-based recommendations are scattered across multiple sources and often difficult for non-specialists to interpret.
+
+This project introduces the **PCOS Nutrition Assistant**, an AI-powered solution built using a **Retrieval-Augmented Generation (RAG)** framework. The system retrieves verified information from medical and nutritional documents and generates context-aware responses tailored for PCOS management. It integrates semantic search, natural language understanding, and responsible AI mechanisms to provide accurate, transparent, and explainable dietary support.
+
+
 ## Overview
 This project implements a **test-driven RAG pipeline**: PDF ingestion → cleaning → 500-word chunks → **Sentence-BERT** embeddings → **FAISS** vector search → **LangChain** retrieval+generation → answer or **“I don’t know”** (abstention) for low confidence.
 
@@ -12,15 +19,21 @@ This project implements a **test-driven RAG pipeline**: PDF ingestion → cleani
 - Simple API/UI for interactive testing
 
 ## Project Structure
+
+## Project Structure
+
+```
 .
 ├─ app.py                # Flask API (if used)
 ├─ ui/                   # Streamlit UI (ui_app.py)
-├─ engine.py             # core RAG functions
-├─ scripts/              # utilities (index build, etc.)
+├─ engine.py             # Core RAG functions
+├─ scripts/              # Utilities (index build, etc.)
 ├─ data/
-│  └─ pcos_docs/         # put your PDFs here
+│  └─ pcos_docs/         # Put your PDFs here
 ├─ requirements.txt
 └─ README.md
+```
+
 
 
 ## Setup
