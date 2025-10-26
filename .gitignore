@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+.ipynb_checkpoints/
+
+# Environments and IDEs
+.venv/
+venv/
+ENV/
+.vscode/
+*.code-workspace
+
+# Data / Models / Indexes
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.xlsx
+models/
+checkpoints/
+artifacts/
+index/
+indexes/
+faiss/
+*.npz
+*.npy
+*.pkl
+*.pt
+*.bin
+*.onnx
+
+# Media / Large outputs
+media/
+outputs/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.pdf
+
+# Secrets
+.env
+*.key
+*.crt

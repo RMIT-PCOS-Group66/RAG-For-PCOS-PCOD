@@ -1,0 +1,16 @@
+fastembed
+faiss-cpu
+numpy
+pypdf
+pymupdf
+pymupdf4llm
+cryptography
+rank-bm25
+rapidfuzz
+httpx
+streamlit
+matplotlib
+rouge-score
+bert-score
+tqdm
+engine
